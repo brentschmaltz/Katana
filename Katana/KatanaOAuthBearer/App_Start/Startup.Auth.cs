@@ -44,6 +44,9 @@ namespace KatanaOAuthBearer
         // For more information on configuring authentication, please visit http://go.microsoft.com/fwlink/?LinkId=301864
         public void ConfigureAuth(IAppBuilder app)
         {
+            // can create token using
+            // https://github.com/brentschmaltz/CodeSnips/blob/master/src/JwtTokens/CreateToken.cs#L18
+
             var symmetricKeyString = "VbbbbmlbGJw8XH+ZoYBnUHmHga8/o/IduvU/Tht70iE=";
             app.UseWindowsAzureActiveDirectoryBearerAuthentication(
                 new WindowsAzureActiveDirectoryBearerAuthenticationOptions

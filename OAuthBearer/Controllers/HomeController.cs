@@ -7,6 +7,7 @@ namespace KatanaOAuthBearer.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "OAuthBearer using Katana";
+            ViewBag.JWT = Startup.JWT;
 
             return View();
         }
